@@ -1,0 +1,12 @@
+@(m: memoir.common.Message)
+
+<html>
+  <head>
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")" />
+  </head>
+  <body>
+    <h1>@m.content</h1>
+    <p id="js"></p>
+    @playscalajs.html.scripts("/assets", projectName="memoir-js")
+  </body>
+</html>

@@ -1,0 +1,9 @@
+logs
+memoir-common/target
+memoir-common/.js
+memoir-common/.jvm
+memoir-js/target
+memoir-play/target
+project/target
+project/project/target
+target
