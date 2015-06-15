@@ -1,7 +1,6 @@
 package memoir.js
 
 import scala.scalajs.js
-import scalajs.js.annotation.JSName
 import scalajs.js.GlobalScope
 
 /**

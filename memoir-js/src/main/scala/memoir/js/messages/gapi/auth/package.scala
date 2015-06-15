@@ -1,21 +1,11 @@
 package memoir.js.messages.gapi
 
 import scala.scalajs.js
-import scalajs.js.annotation.{JSName, JSExport, JSExportAll}
-import scala.annotation.meta.field
 
 /**
  * Messages that will be passed to Google's `auth` api.
  */
 package object auth {
-  /**
-   * A case class representing the message to be passed to `gapi.auth.authorize`
-   *
-   * @param client_id the client id provided by Google
-   * @param scope the scope for which to request authorization
-   * @param immediate
-   */
-
   /**
    * An interface the represents the message that is passed to the `gapi.auth.authorize`
    * call.

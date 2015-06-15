@@ -16,7 +16,6 @@ object OAuth {
   /**
    * This function is first called when the page is first loaded. Tries to get an auth token from
    * Google.
-   * @return {[type]} [description]
    */
   def checkAuth(): Unit = {
     gapi.auth.authorize(Authorize(clientId, scopes, true), { data: AuthorizeResult =>
