@@ -1,11 +1,11 @@
-package memoir.js.messages.gapi
+package goog.gapi.auth
 
 import scala.scalajs.js
 
 /**
- * Messages that will be passed to Google's `auth` api.
+ * Messages that will be passed to Google's `gapi.auth` api.
  */
-package object auth {
+package object messages {
   /**
    * An interface the represents the message that is passed to the `gapi.auth.authorize`
    * call.

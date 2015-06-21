@@ -1,7 +1,7 @@
 package memoir.js.oauth
 
-import memoir.js.google.gapi
-import memoir.js.messages.gapi.auth.{Authorize, AuthorizeResult}
+import goog.gapi.auth.Auth
+import goog.gapi.auth.messages.{Authorize, AuthorizeResult}
 import scala.scalajs.js.timers.setTimeout
 import scalajs.js.annotation.JSExport
 
@@ -18,7 +18,7 @@ object OAuth {
    * Google.
    */
   def checkAuth(): Unit = {
-    gapi.auth.authorize(Authorize(clientId, scopes, true), { data: AuthorizeResult =>
+    Auth.authorize(Authorize(clientId, scopes, true), { data: AuthorizeResult =>
       println(data.error)
     })
   }
