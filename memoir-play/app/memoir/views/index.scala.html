@@ -1,12 +1,18 @@
-@(m: memoir.common.Message)
-
+<!doctype html>
 <html>
   <head>
+    <style>
+        @@font-face {
+            font-family: 'Tangerine';
+            src: url(@routes.Assets.at("fonts/Tangerine_Bold.ttf"));
+        }
+    </style>
     <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")" />
+    <link href="@routes.Assets.at("mui-0.1.14/css/mui.min.css")" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>@m.content</h1>
-    <p id="js"></p>
+    <script type="text/javascript" src="@routes.Assets.at("memoir-js-jsdeps.js")"></script>
+    <script src="@routes.Assets.at("mui-0.1.14/js/mui.min.js")"></script>
     @playscalajs.html.scripts("/assets", projectName="memoir-js")
     <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=OAuthBootstrap"></script>
   </body>
